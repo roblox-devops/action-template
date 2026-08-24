@@ -10,3 +10,4 @@ rules:
     allow-non-breakable-inline-mappings: true
 ignore:
   - .licenses/
+  - pnpm-lock.yaml
