@@ -1,9 +1,9 @@
 # Create a GitHub Action Using TypeScript
 
-![Linter](https://github.com/actions/typescript-action/actions/workflows/linter.yml/badge.svg)
-![CI](https://github.com/actions/typescript-action/actions/workflows/ci.yml/badge.svg)
-![Check dist/](https://github.com/actions/typescript-action/actions/workflows/check-dist.yml/badge.svg)
-![CodeQL](https://github.com/actions/typescript-action/actions/workflows/codeql-analysis.yml/badge.svg)
+![Linter](https://github.com/roblox-devops/action-template/actions/workflows/linter.yml/badge.svg)
+![CI](https://github.com/roblox-devops/action-template/actions/workflows/ci.yml/badge.svg)
+![Check dist/](https://github.com/roblox-devops/action-template/actions/workflows/check-dist.yml/badge.svg)
+![CodeQL](https://github.com/roblox-devops/action-template/actions/workflows/codeql-analysis.yml/badge.svg)
 ![Coverage](./badges/coverage.svg)
 
 Use this template to bootstrap the creation of a TypeScript action. :rocket:
@@ -93,14 +93,14 @@ There are a few things to keep in mind when writing your action code:
   In `main.ts`, you will see that the action is run in an `async` function.
 
   ```javascript
-  import * as core from '@actions/core'
+  import * as core from '@actions/core';
   //...
 
   async function run() {
     try {
       //...
     } catch (error) {
-      core.setFailed(error.message)
+      core.setFailed(error.message);
     }
   }
   ```
@@ -202,7 +202,8 @@ steps:
 ```
 
 For example workflow runs, check out the
-[Actions tab](https://github.com/actions/typescript-action/actions)! :rocket:
+[Actions tab](https://github.com/roblox-devops/action-template/actions)!
+:rocket:
 
 ## Usage
 
@@ -223,7 +224,7 @@ steps:
 
   - name: Test Local Action
     id: test-action
-    uses: actions/typescript-action@v1 # Commit with the `v1` tag
+    uses: roblox-devops/action-template@v1 # Commit with the `v1` tag
     with:
       milliseconds: 1000
 
